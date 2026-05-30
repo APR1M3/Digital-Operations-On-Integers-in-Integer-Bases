@@ -156,15 +156,8 @@ def repeatminus(num, base):
         print(value)
         value = summinusprod(value, base)
 
-    length = len(valuelist)
-    for i in range(length):
-        if valuelist[i] == value:
-            looplength = length - i
-            print("")
-            print(f"Length of loop is {looplength} value(s)")
-            print(f"{value} is a {looplength}-periodic S-P number")
-
-    return looplength 
+    seqlength=len(valuelist)
+    return seqlength 
 
 
 def repeattimes(num, base):
