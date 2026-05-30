@@ -146,6 +146,26 @@ def repeatplus(num, base):
 
     return looplength
 
+def repeatminus(num, base):
+    value = num
+    valuelist = [value]
+    print(value)
+    value = summinusprod(value, base)
+    while value not in valuelist:
+        valuelist.append(value)
+        print(value)
+        value = summinusprod(value, base)
+
+    length = len(valuelist)
+    for i in range(length):
+        if valuelist[i] == value:
+            looplength = length - i
+            print("")
+            print(f"Length of loop is {looplength} value(s)")
+            print(f"{value} is a {looplength}-periodic S-P number")
+
+    return looplength 
+
 
 def repeattimes(num, base):
     value = num
@@ -167,6 +187,18 @@ def repeattimes(num, base):
 
     return looplength
 
+def repeatdivide(num, base):
+    value = num
+    valuelist = [value]
+    print(value)
+    value = sumoverprod(value, base)
+    while value not in valuelist and value >=1 and int(value)=value:
+        valuelist.append(value)
+        print(value)
+        value = sumoverprod(value, base)
+        
+    seqlength=len[valuelist]
+    return seqlength
 
 # repeattimes(128,7)
 # Outputs "Length of loop is 1 value(s)"
