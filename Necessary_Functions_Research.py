@@ -146,18 +146,6 @@ def repeatplus(num, base):
 
     return looplength
 
-def repeatminus(num, base):
-    value = num
-    valuelist = [value]
-    print(value)
-    value = summinusprod(value, base)
-    while value not in valuelist:
-        valuelist.append(value)
-        print(value)
-        value = summinusprod(value, base)
-
-    seqlength=len(valuelist)
-    return seqlength 
 
 
 def repeattimes(num, base):
@@ -180,18 +168,6 @@ def repeattimes(num, base):
 
     return looplength
 
-def repeatdivide(num, base):
-    value = num
-    valuelist = [value]
-    print(value)
-    value = sumoverprod(value, base)
-    while value not in valuelist and value >=1 and int(value)=value:
-        valuelist.append(value)
-        print(value)
-        value = sumoverprod(value, base)
-        
-    seqlength=len(valuelist)
-    return seqlength
 
 # repeattimes(128,7)
 # Outputs "Length of loop is 1 value(s)"
