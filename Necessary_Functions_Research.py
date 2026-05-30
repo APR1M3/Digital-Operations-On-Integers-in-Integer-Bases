@@ -190,7 +190,7 @@ def repeatdivide(num, base):
         print(value)
         value = sumoverprod(value, base)
         
-    seqlength=len[valuelist]
+    seqlength=len(valuelist)
     return seqlength
 
 # repeattimes(128,7)
